@@ -1,38 +1,81 @@
 .App {
   text-align: center;
+  font-family: "Times New Roman", Times, serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background: #848884;
+  color: whitesmoke;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.continents {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 20rem;
+  height: 18rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+  border-radius: 10px;
+}
+
+.card img {
+  width: 20rem;
+  height: 18rem;
+  border-radius: 10px;
+}
+
+.card p {
+  margin-top: -4rem;
+  margin-left: -10rem;
+}
+
+.h1 {
+  font-size: 40px;
+}
+
+.link {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.currentPlace {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  width: 50rem;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
+    rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+  padding: 2rem;
+  border-radius: 5px;
+}
+
+.current-child {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.current-child p {
+  text-align: left;
+}
+
+.currentPlace img {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 5px;
+}
+
+.ab {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
